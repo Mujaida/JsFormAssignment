@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Valid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/validForm.css">
+    <script src="JavaScript/AssgnFormValid.js"></script>
+</head>
+<body>
+    <center>              
+    <form action="/https://stackoverflow.com" name="formValid" onsumbit="return validate()" method="POST">
+    <h1>JavaScript Form Validation</h1>
+    <div class="container">
+        <table id="dataform">
+            <tr>
+              <td>
+                <label class="form">Primary Email ID<span class="required" aria-required="true">*</span></label></td>
+              <td><input class="form" type="text" name="name" required></td>
+            </tr>  
+            <tr>
+                <td><label class="form">Address<span class="required" aria-required="true">*</span></label></td>
+                <td><input class="form" type="text" name="address" required></td>
+              </tr> 
+              <tr>
+                <td><label class="form">Zip code<span class="required" aria-required="true">*</span></label></td>
+                <td><input class="form" type="number" name="code" required></td>
+              </tr> 
+              <tr>
+                <td><label class="form">Country<span class="required" aria-required="true">*</span></label></td>
+                <td><select id="country" name="country">
+                  <option value="country">Please select...</option>
+                  <option value="India">India</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Italy">Italy</option>
+                </select>
+              </tr> 
+              <tr>
+                <td><label class="form">Gender<span class="required" aria-required="true">*</span></label></td>
+                <td><input class="form" type="radio" name="gender" value="male">Male
+                <input class="form" type="radio" name="gender" value="female">Female</td>
+              </tr>
+              <tr>
+                <td><label class="form">Preferences<span class="required" aria-required="true">*</span></label></td>
+                <td><input class="form" type="checkbox" name="preferences">Red
+                  <input class="form" type="checkbox" name="preferences">Green
+                  <input class="form" type="checkbox" name="preferences">Blue</td>
+              </tr>
+              <tr>
+                <td><label class="form">Phone<span class="required" aria-required="true">*</span></label></td>
+                <td><input class="form" type="number" name="phone" required></td>
+              </tr>
+              <tr>
+                <td><label class="form">Email<span class="required" aria-required="true">*</span></label></td>
+                <td><input class="form" type="email" name="email" required></td>
+              </tr>
+              <tr>
+                <td><label class="form">Password (6-8 characters)<span class="required" aria-required="true">*</span></label></td>
+                <td><input class="form" type="password" name="password" required></td>
+              </tr>
+              <tr>
+                <td><label class="form">Verify password<span class="required" aria-required="true">*</span></label></td>
+                <td><input class="form" type="password" name="verifypwd" required></td>
+              </tr>
+              <tr>  
+              <td></td>
+              <td><input type="submit" class="btn" value="SEND">
+              <input type="button" class="btn" value="CLEAR"></td>
+            </tr>
+</table>
+</div>
+</form>
+</center>
+</body>
+</html>
